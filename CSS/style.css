@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --background-color: hsl(204, 43%, 93%);
+    --box-two-color: hsl(179, 62%, 43%);
+    --buttun-color: hsl(71, 73%, 54%);
+    --font-box-three-color: hsl(179, 47%, 52%);
+    --paragraph-color: hsl(218, 22%, 67%);
+    --big-font-color: hsl(180, 100%, 97%);
+    --main-padding: 5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--background-color);
+}
+
+.container-fluid {
+    height: calc(100vh);
+}
+
+.section {
+    width: 625px;
+    box-shadow: -10px 5px 20px 0px hsl(179deg 62% 43%);
+}
+
+.box-1 {
+    background-color: white;
+    padding: var(--main-padding);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box-1 h1 {
+    font-weight: 700;
+    color: var(--font-box-three-color);
+}
+
+.para1 {
+    color: var(--buttun-color);
+    font-weight: 700;
+}
+
+.para2 {
+    width: 95%;
+}
+
+.box-2 {
+    height: calc(485px - 225px);
+    background-color: var(--box-two-color);
+    padding: 6%;
+    border-bottom-left-radius: 10px;
+}
+
+.box-2 h2 {
+    color: var(--big-font-color);
+}
+
+.box-2 span {
+    color: var(--big-font-color);
+    font-weight: 700;
+}
+
+.box-2 .para4 {
+    color: var(--big-font-color);
+}
+
+.btn {
+    background-color: var(--buttun-color);
+    color: var(--big-font-color);
+    transition: 0.3s;
+}
+
+.box-3 {
+    height: calc(485px - 225px);
+    background-color: var(--font-box-three-color);
+    padding: var(--main-padding);
+    border-bottom-right-radius: 10px;
+}
+
+.box-3 .h5 {
+    color: var(--big-font-color);
+}
+
+.box-3 p {
+    font-size: 15px;
+}
+
+footer {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width:376px) {
+    .section {
+        width: 85%;
+    }
+    .row2 {
+        flex-direction: column;
+    }
+    .box-2 {
+        border-bottom-left-radius: 0;
+    }
+    .box-3 {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
